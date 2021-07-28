@@ -25,7 +25,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <div align="left" style="font-size: 0pt; line-height: 0pt;"><img src="https://www.didim365.com/wp-content/uploads/2021/06/MailCouponEnd.gif" border="0" width="100%" height="" alt="" style="-ms-interpolation-mode: bicubic;" loading="lazy"></div>
+                                                        <div align="left" style="font-size: 0pt; line-height: 0pt;"><img src="https://www.didim365.com/wp-content/uploads/2021/07/MailCouponEnd.gif" border="0" width="100%" height="" alt="" style="-ms-interpolation-mode: bicubic;" loading="lazy"></div>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -41,8 +41,8 @@
                                                             <tr>
                                                                 <td>
                                                                     <div align="left" style="color: #212124; font-family: 'Noto Sans KR', 'Malgun Gothic','Roboto', sans-serif; font-size: 15px; line-height: 24px;">
-                                                                        <span style="font-weight: 700">안녕하세요. <$$$CORP_NAME$$$>입니다.</span><br><br>
-                                                                        <$$$MEMBER_NAME$$$>고객님! <br>
+                                                                        <span style="font-weight: 700">안녕하세요. {corp_name}입니다.</span><br><br>
+                                                                        {member_name}고객님! <br>
                                                                         고객님이 보유하고 계신 쿠폰의 사용 종료일이 얼마 남지 않았습니다. <br><br>
                                                                         사용 가능한 쿠폰 잔여 금액은 {ava_amt}원 입니다.
                                                                         해당되는 쿠폰 정보는 아래 내역을 참고해 주시기 바랍니다.
@@ -144,31 +144,15 @@
                                                         <td>
                                                             <table style="color: #212124; font-family: 'Noto Sans KR','Malgun Gothic','Roboto', sans-serif; font-size: 15px; line-height: 24px; border-bottom: 4px solid #343A40;" border="0" width="100%" cellspacing="0" cellpadding="0">
                                                                 <tbody><tr>
-                                                                    <td width="35%" style="padding:10px 10px; color:#343A40; font-weight:bold; text-align:center; line-height:1.6; background-color:#AAB0B5;">
-                                                                    기술 지원<br>365일 24시간 상시 운영!</td>
+                                                                    <td width="35%" style="padding:10px 5px; color:#343A40; font-weight:bold; text-align:center; line-height:1.6; background-color:#AAB0B5;">
+                                                                    기술 지원<br>365일 24시간 상시운영!</td>
                                                                     <td bgcolor="#545B61" style="padding:10px 15px 10px 30px; color:#d9dee2; text-align:left; line-height:1.6;">
-                                                                        <span style="font-weight: bold;">URL</span><br>{portal_url}
+                                                                        <span style="font-weight: bold;">URL</span><br
+                                                                        ><a href="http://{cloud_support_url}/login.aspx" target="_blank" style="color:#d9dee2; font-size:15px; font-weight:normal; font-family:'Noto Sans KR','Malgun Gothic','Roboto', sans-serif; text-decoration:underline">바로가기</a>
                                                                     </td>
                                                                 </tr>
                                                             </tbody></table>
-                                                            <table style="color: #212124; font-family: 'Noto Sans KR','Malgun Gothic','Roboto', sans-serif; font-size: 15px; line-height: 24px; border-bottom: 4px solid #343A40;" width="100%" cellspacing="0" cellpadding="0">
-                                                                <tbody><tr>
-                                                                    <td width="35%" style="padding:10px 10px; color:#ffffff; font-weight:bold; text-align:center; line-height:1.6; background-color:#5f656a;">
-                                                                    영업 상담<br>업무시간: 9AM - 6PM</td>
-                                                                    <td style="padding:10px 15px 10px 30px; color:#d9dee2; text-align:left; line-height:1.6; background-color:#464b51;">
-                                                                        <span style="font-weight: bold;">Mail</span><br>{sales}
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody></table>
-                                                            <table style="color: #212124; font-family: 'Noto Sans KR','Malgun Gothic','Roboto', sans-serif; font-size: 15px; line-height: 24px; border-bottom: 4px solid #343A40;" width="100%" cellspacing="0" cellpadding="0">
-                                                                <tbody><tr>
-                                                                    <td width="35%" style="padding:10px 10px; color:#343A40; font-weight:bold; text-align:center; line-height:1.6; background-color:#AAB0B5;">
-                                                                        빌링 상담<br>업무시간: 9AM - 6PM</td>
-                                                                    <td bgcolor="#545B61" style="padding:10px 15px 10px 30px; color:#d9dee2; text-align:left; line-height:1.6;">
-                                                                        <span style="font-weight: bold;">Mail</span><br>{bill}
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody></table>
+                                                            
                                                         </td>
                                                     </tr>
                                                 </tbody>
